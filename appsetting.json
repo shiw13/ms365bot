@@ -1,0 +1,17 @@
+{
+  "scope" : "offline_access Mail.Read",
+  "redirectURI" : "https://contoso.com/ms365/receive",
+  "app" : [
+    {
+      "clientID" : "",
+      "clientSecret" : "",
+      "state" : "100"
+    }
+  ],
+  "apiInvokeInterval" : 18,
+  "dataFileName" : "backup.data",
+  "ip" : "0.0.0.0",
+  "port" : 8443,
+  "certPath" : "",
+  "keyPath" : ""
+}
