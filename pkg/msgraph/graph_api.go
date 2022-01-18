@@ -39,7 +39,7 @@ func GetToken(ctx context.Context, in GetTokenParam) (TokenResponse, error) {
 
 	var res TokenResponse
 
-	if err := httpClient().PostForm(ctx, uri, params, nil, res); err != nil {
+	if err := httpClient().PostForm(ctx, uri, params, nil, &res); err != nil {
 		return res, err
 	}
 
@@ -67,7 +67,7 @@ func RefreshToken(ctx context.Context, in RefreshTokenParam) (TokenResponse, err
 
 	var res TokenResponse
 
-	if err := httpClient().PostForm(ctx, uri, params, nil, res); err != nil {
+	if err := httpClient().PostForm(ctx, uri, params, nil, &res); err != nil {
 		return res, err
 	}
 
